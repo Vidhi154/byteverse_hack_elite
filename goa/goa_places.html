@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Mumbai</title>
+    <style>
+        /* Resetting default styles and setting up general styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(#033747, #012730);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(#033747, #012730);
+        }
+
+        nav .logo p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .header {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 32px;
+            color: white;
+        }
+
+        .head span {
+            color: yellow;
+        }
+
+        .box {
+            /* margin-bottom: 200px; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+
+        .card {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background-color: #f0f0f0;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            border: 2px solid white;
+        }
+        .card:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>GOA</p>
+        </div>
+    </nav>
+
+    <div class="header">
+        <p class="head">Places you can visit in <span>GOA</span></p>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="./images/poleam.jpg" alt="Global Vipassana Pagoda">
+            <div class="card-content">
+                <h2>Palolem Beach</h2>
+                <p>Palolem Beach is a white sand beach in Canacona, Goa, India, known for its calm waters, nightlife, and stunning sunsets. The beach is lined with palm trees and colorful wooden shacks, and faces Canacona Island, which is known for its resident monkeys.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/panji.jpg" alt="Shree Siddhivinayak Temple">
+            <div class="card-content">
+                <h2>Panaji</h2>
+                <p>Panaji remains the most famous tourist destination in Goa, in terms of beaches, churches, carnivals and natural beauty. Being the capital city, it is the focal point of tourism in Goa. The town has some beautiful red-blue-green-yellow roofed buildings made in Portuguese Baroque style.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/candium.jpg" alt="Gateway Of India Mumbai">
+            <div class="card-content">
+                <h2>Candolim</h2>
+                <p>Candolim is the first beach that can be approached from the capital city of Panaji. Besides a place of tourist interest, Candolim has historic significance as well. The founder of science of hypnotism, Father Abbe Faria, was born here.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/anuja.jpg" alt="Mani Bhavan Gandhi Sangrahalaya">
+            <div class="card-content">
+            <h2>Anjuna Beach</h2>
+                <p>Anjuna Beach is famous for its vibrant nightlife. The beach is dotted with numerous clubs and shacks that host parties and live music performances. The most famous among them is the Curlies Beach Shack, known for its psychedelic parties and trance music.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

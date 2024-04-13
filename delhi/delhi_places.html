@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Mumbai</title>
+    <style>
+        /* Resetting default styles and setting up general styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(#033747, #012730);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(#033747, #012730);
+        }
+
+        nav .logo p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .header {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 32px;
+            color: white;
+        }
+
+        .head span {
+            color: yellow;
+        }
+
+        .box {
+            /* margin-bottom: 200px; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+
+        .card {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background-color: #f0f0f0;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            border: 2px solid white;
+        }
+        .card:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>DELHI</p>
+        </div>
+    </nav>
+
+    <div class="header">
+        <p class="head">Places you can visit in <span>DELHI</span></p>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="./images/jama.png" alt="Global Vipassana Pagoda">
+            <div class="card-content">
+                <h2>The Jama Masjid</h2>
+                <p>The Jama Masjid was regarded as a symbolic gesture of Islamic power across India, well into the colonial era. It was also a site of political significance during several key periods of British rule. It remains in active use, and is one of Delhi's most iconic sites, closely identified with the ethos of Old Delhi.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/loutus.jpg" alt="Shree Siddhivinayak Temple">
+            <div class="card-content">
+                <h2>The Lotus Temple</h2>
+                <p>The Lotus Temple in New Delhi is a temple belonging to the Bahai sect. Bahaism is recognized as a combination of the nine great religions of the world. The temple is built in the shape of a floating half open lotus set amidst pools and gardens. This temple has no idols of any God.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/red fort.jpg" alt="Gateway Of India Mumbai">
+            <div class="card-content">
+                <h2>The Red Fort</h2>
+                <p>Built by Mughal emperor Shah Jahan as the palace fort of his capital Shahjahanabad, the Red Fort is famous for its massive enclosing walls. The fort's construction was completed over a span of ten years, between 1638 and 1648.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/India_Gate_in_New_Delhi_03-2016.jpg" alt="Mani Bhavan Gandhi Sangrahalaya">
+            <div class="card-content">
+            <h2>India Gate</h2>
+                <p>India Gate is counted amongst the largest war memorials in India and every Republic Day, the Prime Minister visits the gate to pay their tributes to the Amar Jawan Jyoti, following which the Republic Day parade starts. India Gate is often a location for civil society protests, and is popular with tourists.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

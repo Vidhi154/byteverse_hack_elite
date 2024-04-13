@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Mumbai</title>
+    <style>
+        /* Resetting default styles and setting up general styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(#033747, #012730);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(#033747, #012730);
+        }
+
+        nav .logo p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .header {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 32px;
+            color: white;
+        }
+
+        .head span {
+            color: yellow;
+        }
+
+        .box {
+            /* margin-bottom: 200px; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+
+        .card {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background-color: #f0f0f0;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            border: 2px solid white;
+        }
+        .card:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>MUMBAI</p>
+        </div>
+    </nav>
+
+    <div class="header">
+        <p class="head">Places you can visit in <span>MUMBAI</span></p>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="./images/GlobalVipasanaPagoda.JPG" alt="Global Vipassana Pagoda">
+            <div class="card-content">
+                <h2>Global Vipassana Pagoda</h2>
+                <p>A warm and inviting spiritual centre, Global Vipassana Pagoda was built to help increase harmony and to acquaint people with concepts of Vipassana and Buddha’s teachings.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/siddhivinayak-temple-mumbai.jpg" alt="Shree Siddhivinayak Temple">
+            <div class="card-content">
+                <h2>Shree Siddhivinayak Temple</h2>
+                <p>Shree Siddhivinayak Temple is a prominent Hindu temple located in Prabhadevi, Mumbai, India. Dedicated to Lord Ganesha, it is one of the most revered and visited temples in the city.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/Gateway Of India Mumbai.jpg" alt="Gateway Of India Mumbai">
+            <div class="card-content">
+                <h2>Gateway Of India Mumbai</h2>
+                <p>Located on the waterfront in Colaba, South Mumbai, this arch monument is Mumbai’s prime landmark. It was built by the British to welcome King George V and Queen Mary during a royal visit in 1911.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/marien.jpg" alt="Mani Bhavan Gandhi Sangrahalaya">
+            <div class="card-content">
+                <h2>Marine Drive</h2>
+                <p>Marine Drive is a 3.6 km long promenade in Mumbai, India, that runs along the Netaji Subhash Chandra Bose Road. It's also known as the Queen's Necklace, and is a popular spot for leisurely walks and watching the sunset. The road is banana-shaped, with six lanes, and runs along the coast of a natural bay.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

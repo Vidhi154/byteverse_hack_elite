@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Mumbai</title>
+    <style>
+        /* Resetting default styles and setting up general styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(#033747, #012730);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(#033747, #012730);
+        }
+
+        nav .logo p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .header {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 32px;
+            color: white;
+        }
+
+        .head span {
+            color: yellow;
+        }
+
+        .box {
+            /* margin-bottom: 200px; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+
+        .card {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background-color: #f0f0f0;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            border: 2px solid white;
+        }
+        .card:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>KOLKATA</p>
+        </div>
+    </nav>
+
+    <div class="header">
+        <p class="head">Places you can visit in <span>KOLKATA</span></p>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="./images/horah.jpg" alt="Global Vipassana Pagoda">
+            <div class="card-content">
+                <h2>Howrah Bridge</h2>
+                <p>An iconic landmark in Kolkata, the Howrah Bridge is a huge steel bridge over the Hooghly River. It is considered to be one of the longest cantilever bridges in the world. Also known as Rabindra Setu, it connects Howrah and Kolkata. It carries 100,000 vehicles and countless pedestrians daily.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/victoria.png" alt="Shree Siddhivinayak Temple">
+            <div class="card-content">
+                <h2>Victoria Memorial</h2>
+                <p>Dedicated to Queen Victoria of England, it was constructed between 1906 and 1921 by the then Prince of Wales (who went on to become King George V). Today, the memorial has been turned into a museum that has 25 galleries. It also houses paintings from the British Raj, along with memorabilia and manuscripts.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/fort.jpg" alt="Gateway Of India Mumbai">
+            <div class="card-content">
+                <h2>Fort William</h2>
+                <p>The headquarters of the Indian Ordnance Factories was established in 1775 at Fort William. Today, Fort William is the property of the Indian Army. The headquarters of Eastern Command is based there, with provisions for accommodating 10,000 army personnel.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/mandir.jpg" alt="Mani Bhavan Gandhi Sangrahalaya">
+            <div class="card-content"></h2>
+                <p>The temple is known for its association with Ramakrishna and Ma Sarada Devi, mystics of 19th century Bengal. The Temple complex on the bank of river Hooghly, West Bengal. The main temple was inspired by Navaratna style Radhakanta temple in Tollygunge, built by Babu Ramnath Mondal of Bawali Raj family.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
