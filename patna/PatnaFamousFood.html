@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City - Name</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(#033747, #012730); */
+    color: #333;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 20px; /* Adjust padding for the logo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#033747, #012730);
+}
+
+nav .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /*  */
+}
+
+.card {
+    width: calc(50% - 40px); /* Two cards per row with spacing */
+    margin: 20px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+    flex: 1 0 40%; /* Flexible width for responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+     
+
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: brown;
+    color:black;
+    transition: all 0.4s ease 0s;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+           FAMOUS-FOOD
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card"> 
+            <img src="litti-chokha-1.jpg">
+            <div class="card-content">
+                <h2>Litti- Chokha</h2>
+                <p>Litti is a whole wheat flour dough ball stuffed with a spiced mixture of sattu. Litti, along with chokha, is a complete meal that originated from the Bhojpuri region of the Indian states of Bihar and Uttar Pradesh. Traditionally, the wheat dough balls are roasted on hot charcoal or dried cow dung fire..</p>
+               <!--<a href="#" class="btn">Read More</a>--> 
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="chana ghugni.webp">
+            <div class="card-content">
+                <h2>Chana-Ghugni</h2>
+                <p>Ghugni is most commonly made using kala chana (black chickpeas). The combo of ghugni and dhuska is popular in Bhojpuri, Magadhi and Maithil cuisines.It has a good amount of protein and fibre and keeps you full for a longer period of time.</p>
+               <!--<a href="#" class="btn">Read More</a>-->
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="balushahi.webp">
+            <div class="card-content">
+                <h2>Balusahi</h2>
+                <p>Makhan Bada is a traditional dessert originating from the Indian subcontinent. It is also known as Balusaahi and is similar to a glazed doughnut in terms of Ingredients, but differs in texture and taste.</p>
+              <!--  <a href="#" class="btn">Read More</a>-->
+            </div>
+        </div>
+
+        <div class="card"> 
+          <img src="batata-vada.jpg">
+          <div class="card-content">
+              <h2>Batata-Vada</h2>
+              <p>Batata vada is a popular vegetarian fast food dish from the Indian state of Maharashtra. The dish consists of a mashed potato patty coated with chickpea flour, which is then deep-fried and served hot with chutney. The vada is typically around two or three inches in diameter</p>
+            <!--<a href="#" class="btn">Read More</a>--> 
+          </div>
+      </div>
+
+      <div class="card"> 
+        <img src="malpua.webp">
+        <div class="card-content">
+            <h2>Malpua</h2>
+            <p>Malpua, or sometimes shortened to pua, is a sweetened breakfast served with morning tea or as a snack with afternoon tea or as a dessert originating from the East Indian subcontinent, popular in Bhutan, India, Nepal and Bangladesh</p>
+           <!--<a href="#" class="btn">Read More</a>--> 
+        </div>
+    </div>
+
+        <div class="card"> 
+            <img src="daal-bhat.jpg">
+            <div class="card-content">
+                <h2>Daal-Bhat</h2>
+                <p>Dāl bhāt is a traditional meal from the Indian subcontinent. It consists of steamed rice and a cooked lentil or other pulses stew called dal. It is a staple food in these countries. Bhāt or chāwal means "boiled rice" in a number of Indo-Aryan languages</p>
+               <!--<a href="#" class="btn">Read More</a>--> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
