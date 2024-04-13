@@ -1,3 +1,4 @@
+
 .wholecontainer{
   height:100%;
   width:100%;
@@ -11,14 +12,20 @@
   background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
 
 } */
+*{
+  margin: 0px;
+}
+body{
+  background-color: #c8d2db;
+}
 
 .topnav{
   width: 100vw;
   /* background-color: rgba(113, 113, 154, 0.776);
   */
-  background-color: #000000;
-background-image: linear-gradient(160deg, #8ca8cf 0%, #1b227c 100%);
-
+  /* background-color: #000000;
+background-image: linear-gradient(160deg, #8ca8cf 0%, #1b227c 100%); */
+background-color: rgb(191, 201, 210);
 
   max-height: 80px;
   display: flex;
@@ -48,21 +55,22 @@ nav{
 
 a{
   text-decoration: none;
-  color: azure;
+  color: rgb(0, 0, 0);
 }
 #navItems{
   display: flex;
   gap: 40px;
+  color:black;
   
 }
 
-
+/* 
 .topnav {
     background-color: #4c80c5;
     overflow: hidden;
     width:100vw;
   }
-  
+   */
   
   .topnav a {
     float: left;
@@ -246,9 +254,11 @@ button:hover {
 }
 
 .card_title_container{
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
+  height:200px;
 }
 
 .card_container:hover .card_image{
@@ -257,11 +267,12 @@ button:hover {
 }
 
 .card_title{
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.5rem;
   margin-bottom: 0.3rem;
   color: rgb(25, 23, 23);
+  text-align: center;
 }
 
 
@@ -275,43 +286,8 @@ button:hover {
   font-size: 1rem;
 }
 
-.card_footer_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 1.5rem;
-  padding-bottom: 1.5rem;
-}
 
-.author_container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
-.author_avatar_container{
-  height: 2.5rem;
-  width: 2.5rem;
-  overflow: hidden;
-  border: 1px solid rgb(150, 147, 147);
-  border-radius: 50%;
-  background-color: rgb(243, 239, 239);
-}
-
-.author_info_container{
-  display: flex;
-  flex-direction: column;
-}
-
-.author_name{
-  color: rgb(38, 38, 149);
-}
-
-.author_date{
-  color: rgb(136, 126, 126);
-}
-
+/* 
 .card_tag_container{
   font-size: 0.79rem;
   border: 1px solid rgb(76, 71, 71);
@@ -319,5 +295,127 @@ button:hover {
   line-height: 1.3rem;
   padding: 0.25rem 0.5rem;
   color: grey;
-} 
+}  */
+.mainheading{
+  font-size: 3rem;
+  margin-left:100px;
+}
+.footer-container{
+  background-color:black;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  width:100vw;
+}
+
+.footer{
+  max-width: 1280px;
+  padding:1.2rem 2.4rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.footer-top{
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+}
+
+.logo-svg{
+  width: 2rem;
+  height: 6rem;
+}
+
+.comp-logo{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: -1.9rem;
+}
+.logo-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.28rem;
+  font-weight: bold;
+  color: black;
+}
+.social-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.filler-text{
+  font-size: 1rem;
+  color: #777;
+}
+.social{
+  display: flex;
+  gap: 0.8rem;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 58%;
+  grid-gap: 5.67rem;
+  padding-top: 2rem;
+}
+
+.footer-grid-heading{
+  font-size: 1.05rem;
+  font-weight: bold;
+  color:white;
+}
+
+ul{
+  list-style-type: none;
+}
+.footer-link{
+  color: #777;
+  font-size: 0.875rem;
+}
+.footer-links-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-grid-heading{
+  margin-bottom: 1.65rem;
+}
+
+.footer-copyright{
+  color:white;
+  font-size: 0.75rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid #E5E7EB;
+}
+
+@media screen and (max-width:1080px) {
+  .footer{
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-top{
+      padding-left: 10rem;
+  }
+  .footer-grid{
+      align-self: center;
+      justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .footer-top{
+      padding-left: 1rem;
+  }
+  .footer-grid{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
   
