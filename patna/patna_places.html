@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Mumbai</title>
+    <style>
+        /* Resetting default styles and setting up general styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(#033747, #012730);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(#033747, #012730);
+        }
+
+        nav .logo p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .header {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 32px;
+            color: white;
+        }
+
+        .head span {
+            color: yellow;
+        }
+
+        .box {
+            /* margin-bottom: 200px; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+
+        .card {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background-color: #f0f0f0;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            border: 2px solid white;
+        }
+        .card:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>PATNA</p>
+        </div>
+    </nav>
+
+    <div class="header">
+        <p class="head">Places you can visit in <span>PATNA</span></p>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="./images/museam.jpg" alt="Global Vipassana Pagoda">
+            <div class="card-content">
+                <h2>Bihar Museum Patna</h2>
+                <p>The museum galleries chronologically illustrate the history of Bihar and its impact on the subcontinent. It celebrates the contributions of towering personalities like the Buddha, Mahavira, Emperor Ashoka, of ancient universities that flourished in the Bihar region and dynasties that made this region their home.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/mahavir.jpg" alt="Shree Siddhivinayak Temple">
+            <div class="card-content">
+                <h2>Mahavir Mandir Patna</h2>
+                <p>Mahavir Mandir, located near Patna Junction, is one of the most popular temples dedicated to Lord Hanuman. This famous temple is a symbol of devotion and spirit and every day devotees come here with their wishes, and they believe that Sankat Mochan fulfills their every wish.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/1024px-Buddha_Smriti_Park.jpg" alt="Gateway Of India Mumbai">
+            <div class="card-content">
+                <h2>Buddha Smriti Park</h2>
+                <p>Buddha Smriti Park also known as Buddha Memorial Park (as translated in English) is an urban park located on Frazer Road near Patna Junction in Patna, India.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/ghat.jpg" alt="Mani Bhavan Gandhi Sangrahalaya">
+            <div class="card-content">
+            <h2> Gandhi Ghat Patna</h2>
+                <p>It is named after the great leader of the freedom struggle of India, Mahatma Gandhi, whose ashes are believed to have been immersed in Ganga from this ghat. Every weekend, the ghat comes alive as the evening arti (a ritual performed with lamps) of the river is conducted here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
