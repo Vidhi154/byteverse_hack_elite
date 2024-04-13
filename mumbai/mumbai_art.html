@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Art & Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url("./images/navvvv.webp");
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    height: 200px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header-container p{
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.header-container h1, h2 {
+    font-weight: 1000;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+    display: block;
+
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: ; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image:url("images/navvvv.webp");
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image:url("images/navvvv.webp");
+    background-size: cover; */
+}
+.mum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+.num h2{
+    font-size: 33px;
+    font-weight: 700;
+    
+}
+.hidden-content {
+    display: none;
+}
+button{
+    border: 2px solid white;
+    background-color: inherit;
+    color: brown;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.num2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#extraContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+
+
+}
+
+#extraContent img{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+}
+
+.mum3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Mumbai Art & Culture</h1>
+        <p>Explore the vibrant art and cultural heritage of Mumbai</p>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <div class="content-container mum">
+            <h2>About Mumbai</h2>
+            <p>Mumbai, formerly known as Bombay, is the capital city of the Indian state of Maharashtra. It is a melting pot of cultures, renowned for its Bollywood film industry, historic landmarks, diverse cuisine, and thriving arts scene.</p>
+            <!-- <p>This is some visible content.</p> -->
+            <div class="hidden-content" id="extraContent" style="display: none;">
+                <p>This is additional content that will be hidden initially.Mumbai is the capital city of the Indian state of Maharashtra. According to the United Nations, as of 2018, Mumbai is the second-most populous city in the country after Delhi and the seventh-most populous city in the world with a population of roughly 20 million. As per the Indian government population census of 2011, Mumbai was the most populous city in India with an estimated city proper population of 12.5 million living under Municipal Corporation of Greater Mumbai. Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 23 million. Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour. In 2008, Mumbai was named an alpha world city. It has the highest number of millionaires and billionaires among all cities in India. Mumbai is home to three UNESCO World Heritage Sites: the Elephanta Caves, Chhatrapati Shivaji Maharaj Terminus, and the city's distinctive ensemble of Victorian and Art Deco buildings.
+                    The seven islands that constitute Mumbai were originally home to communities of Marathi language speaking Koli people.</p>
+                <!-- <p>It will appear when you click "Show More".</p> -->
+            </div>
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </section>
+
+    <section id="arts">
+        <div class="content-container num2">
+            <h2>Art and Creativity</h2>
+            <p>Mumbai is home to numerous art galleries, museums, and street art. It celebrates a blend of traditional and contemporary art forms, showcasing the talent of local and international artists.</p>
+            <div class="hidden-content" id="extraContent">
+                <div class="im1">
+                    <img src="./images/art2.jpg" alt="">
+                </div>
+                <div class="im2">
+                    <img src="./images/art22.jpg" alt="">
+                </div>
+                <div class="im3">
+                    <img src="./images/art3.webp" alt="">
+                </div>
+                <!-- <p>It will appear when you click "Show More".</p> -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="content-container mum3">
+            <h2>Cultural Heritage</h2>
+            <p>The city's cultural heritage includes festivals like Ganesh Chaturthi, Durga Puja, and Diwali, along with its iconic architectural landmarks such as the Gateway of India and the Elephanta Caves.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Mumbai Art & Culture</p>
+        
+
+    </div>
+</footer>
+
+<script src="art.js"></script>
+</body>
+</html>
