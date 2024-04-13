@@ -154,7 +154,7 @@ justify-content: center;
 }
 
 .inner-award:hover{
-    /* background-image: linear-gradient(white, red); */
+    background-image: linear-gradient(white, lightblue);
    color:black;
    font-size: 2rem;
 }
