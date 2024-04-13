@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City - Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(#033747, #012730);
+    color: #333;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 20px; /* Adjust padding for the logo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#033747, #012730);
+}
+
+nav .logo p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    width: calc(50% - 40px); /* Two cards per row with spacing */
+    margin: 20px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    flex: 1 0 40%; /* Flexible width for responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <p>MUMBAI</p>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card"> 
+            <img src="./images/Gateway Of India Mumbai.jpg">
+            <div class="card-content">
+                <h2>Places to be Visited</h2>
+                <p>Mumbai is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. The city's also famous as the heart of the Bollywood film industry.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="./images/mumbaifood.webp">
+            <div class="card-content">
+                <h2>Famous Food</h2>
+                <p>The favorite food in Mumbai is often considered to be street food, particularly dishes like vada pav, pav bhaji, and bhel puri. These dishes are popular among locals and tourists alike and are known for their delicious flavors and diverse ingredients.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="./images/mumbaiiart.jpg">
+            <div class="card-content">
+                <h2>Arts & Culture</h2>
+                <p>Mumbai is home to three UNESCO World Heritage Sites: the Elephanta Caves, Chhatrapati Shivaji Maharaj Terminus, and the city's distinctive ensemble of Victorian and Art Deco buildings. The seven islands that constitute Mumbai were originally home to communities of Marathi language speaking Koli people.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="./images/mumbai hotel.jpg">
+            <div class="card-content">
+                <h2>Hotels</h2>
+                <p>Some of the good hotels in this area include the Taj Mahal Tower, The Ambassador, Hotel Marine Plaza, and the Four Seasons Hotel. The Sun-N-Sand or the Novotel Juhu offers you a beautiful view of Juhu beach.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
