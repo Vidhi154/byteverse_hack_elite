@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City - Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(#033747, #012730); */
+    color: #333;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 20px; /* Adjust padding for the logo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#033747, #012730);
+}
+
+nav .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /*  */
+}
+
+.card {
+    width: calc(50% - 40px); /* Two cards per row with spacing */
+    margin: 20px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+    flex: 1 0 40%; /* Flexible width for responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+     
+
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: brown;
+    color:black;
+    transition: all 0.4s ease 0s;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+           FAMOUS-FOOD
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card"> 
+            <img src="fresh-vada-pav.jpg">
+            <div class="card-content">
+                <h2>Vada-Pav</h2>
+                <p>Vada pav, alternatively spelt wada pao, is a vegetarian fast food dish native to the Indian state of Maharashtra. The dish consists of a deep fried potato dumpling placed inside a bread bun sliced almost in half through the middle. It is generally accompanied with one or more chutneys and a green chili pepper.</p>
+               <!--<a href="#" class="btn">Read More</a>--> 
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="mawa-samosa.jpg">
+            <div class="card-content">
+                <h2>Mawa-Samosa</h2>
+                <p>Mewa Samosa is a dry fruit mini samosa. These crispy fried triangles stuffed with the amalgamation of sweet n salty spices and richness of finest quality dry fruits. These mini items are an instant hit for any occasion. Especially popular during the festive season of Diwali, Holi, Karwa Chauth etc. Commonly consumed as a tea time snack.</p>
+               <!--<a href="#" class="btn">Read More</a>-->
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="bombil-fry.jpg">
+            <div class="card-content">
+                
+                <h2>Bombil-Fry </h2>
+                <p>It is generally served in the coastal region of Mumbai. It has amazing health benefits such as it helps to promote heart health and immunity and supporting your weight loss process. This fish is so versatile and can be eaten steamed, fried, grilled, or can be added to your favourite fish curry.</p>
+              <!--  <a href="#" class="btn">Read More</a>-->
+            </div>
+        </div>
+
+        <div class="card"> 
+          <img src="burn-maska.jpg">
+          <div class="card-content">
+              <h2>Burn-Muska </h2>
+              <p> fresh pav or buns, fresh cream and white butter. Roast the pavs and make a mixture of butter-cream, which is known as the maska. Apply dollops of this maska all over the warm pav and inside it and you are good to go! It's a pocket-friendly recipe that can be enjoyed anytime with masala tea.</p>
+            <!--<a href="#" class="btn">Read More</a>--> 
+          </div>
+      </div>
+
+      <div class="card"> 
+        <img src="baida roti.jpeg">
+        <div class="card-content">
+            <h2>Baida- Roti</h2>
+            <p>Baida roti is an egg-based paratha package, and Baida signifies egg. For this food, people use Refined flour to form the paratha dough, which is then filled with a mixture of chopped chicken, egg, and other spices. They then fold it into a bundle, fry it quickly on a Tava (griddle), and serve it with a squeeze of lime</p>
+           <!--<a href="#" class="btn">Read More</a>--> 
+        </div>
+    </div>
+
+        <div class="card"> 
+            <img src="akuri-toast.jpg">
+            <div class="card-content">
+                <h2>Akuri-Toast</h2>
+                <p>Scrambled eggs made in the Parsi style recipe are also referred to as Akuri Recipe. Parsi Community of India makes this delectable dish where eggs are not overcooked. Instead, the eggs are little runny and loose. Mild spices are added to it to make it flavoursome.</p>
+               <!--<a href="#" class="btn">Read More</a>--> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
