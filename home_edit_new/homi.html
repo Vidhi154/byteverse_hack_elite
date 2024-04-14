@@ -309,11 +309,15 @@
 } */
 
 .third{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 700px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    /* height: 100px; */
     /* border: 2px solid black; */
 
+}
+.third div{
+    border: 2px solid rgb(218, 149, 85);;
 }
     /* background-color:  */
 
@@ -336,7 +340,7 @@
     text-align: justify;
     font-weight: 200;
     font-style: oblique;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 
@@ -348,7 +352,7 @@
 
 /* butt */
 .faq {
-  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 10px 0;
 }
 .faq.active {
@@ -427,29 +431,63 @@
     color:black;
 }
 
+.fff{
+    /* height: 50px; */
+    /* background-color: beige; */
+}
+
+footer{
+    /* background-color: #0f1111; */
+    height: 100px;
+    
+}
 
 
 
-/* footer{
+
+footer {
     height: 200px;
     color: black;
-    background-color: #0f1111;
+    background-color: #f1f7f5; /* Update background color if needed */
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 0%;
-    background-color: #0f1111;
-     text-align: center;
-} */
- /* .do{
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+
+footer .do{
+    flex-basis: 300px;
+}
+footer .do,
+footer .doo {
+    width: 50%; /* Adjust width as needed */
+}
+footer .doo{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;flex-direction: row;
-    justify-content: baseline;
-    background-color: #0f1111;
-} */
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 @media (min-width: 768px) {
   .card_img{
           height: 12rem;
@@ -544,8 +582,9 @@
                         <!-- <div class="txt">Taj Mahal</div> -->
                     </div>
                 </div>
-                <div style="text-align: center;">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div style="text-align: center">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
 
             </div>
         </div>
@@ -703,7 +742,7 @@
                                     Yes, our app allows you to conveniently book hotels, resorts, guesthouses, and vacation rentals at your preferred destination. Browse through a wide selection of options, read reviews, and secure your stay with instant booking confirmation.
                                   </p>
                                 </div>
-                                <div class="faq">
+                            <div class="faq">
                                     <button class="accordion">
                                         How can I access emergency assistance or local support while traveling?
                                       <i class="fa-solid fa-chevron-down"></i>
@@ -729,11 +768,34 @@
                                             <a href="\contact_us\contact.html">CONTACT US</a>
                                         </button>
                                     </div>   
-                </div>
-                <div>
+                    </div>
+            </div>
 
                 </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <footer>
+            <div class="do">
+                <p>Contact Us</p>
+                <ul>
+                    <li>Address: 123 Street, City, Country</li>
+                    <li>Email: example@example.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+            <div class="doo">
+                <p>Follow Us</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
         <!-- <br>
         <br>
         <br> -->
