@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        border: border-box;
+    }
+    body{
+        background-color: rgb(218, 149, 85);
+    }
+    .nav{
+        height: 65px;
+        background-color: rgb(123, 61, 3);
+        /* font-size: medium;
+        font-weight: 500; */
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* justify-content: center; */
+        color: white;
+        padding: 0 20px;
+        /* position: absolute; */
+    }
+    .logo_nav{
+        /* border: 2px solid white; */
+        /* height: 30px;
+        width: 200px; */
+        /* flex-basis: 500px; */
+        display: flex;
+        /* margin-top: 6px; */
+        /* justify-content: center; */
+        align-items: center;
+
+        
+    }
+    .logo{
+        /* background-color: white; */
+        border: 2px solid none;
+        height: 50px;
+        width: 80px;
+    }
+    .nav a{
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* font-weight: 700; */
+    }
+    .ser{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        flex-basis: 600px;
+        /* justify-content: space-between; */
+    }
+    .box{
+        display: flex;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        /* background-color: rgb(193, 147, 56); */
+        width: 300px;
+        /* height: 38px; */
+        /* border-radius: 3px; */
+        /* border: 2px solid #0f1111; */
+        flex-basis: 800px;
+
+
+    }
+   
+    .select{
+        color: #7b7070;
+        text-align: center;
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* flex-basis: 300px; */
+        /* padding: px; */
+        height: 38px;
+    }
+    #searchForm{
+        display: flex;
+        /* flex-basis: 200px; */
+        align-items: center;
+        width: 100%;
+        gap:10px
+        /* grid-area: 2px; */
+
+    }
+
+    #searchInput{
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(233, 218, 199);
+
+    }
+    .ser{
+        background: color #834611; 
+        width: 200px;
+        padding: 10px;
+        font-size: 1rem;
+        padding-right: 200px;
+        border: none;
+
+        /* margin-right: 33px; */
+    }
+    #searchInput:hover{
+        border: 2px solid none;
+        background-color:rgb(233, 218, 199);
+        cursor: pointer;
+        /* color: #0f1111; */
+        transform: scale(1.1);
+  transition-duration: 200ms;
+    }
+    .search-icon{
+        color: rgb(114, 38, 38);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 2rem; */
+        /* padding-right: 27px; */
+        background-color: green;
+        padding: 8px 16px;
+        height: 30px;
+        width: 50px;
+        color: #0f1111;
+        border-top-right-radius:3px ;
+
+        border-radius: 3px;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10%;
+        border: none;
+    }
+    button:hover{
+        background-color:beige;
+        cursor: pointer;
+        transform: scale(1.1);
+  transition-duration: 200ms;
+
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home a:hover,
+.contact a:hover,
+.about a:hover {
+    color: black;
+    /* transform: scale(3.1); */
+  /* transition-duration: 200ms; */
+
+}
+
+.cardd img{
+    height: 100vh;
+    width: 100%;
+
+}
+.sec_txt{
+    text-align:justify;
+    padding: 20px;
+}
+.sec_txt a{
+    text-decoration: none;
+}
+.text{
+  
+  font-family: 'Brush Script MT', cursive;
+  font-size:60px;
+  position: absolute;
+  color: black;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.text2{
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  top: 33%;
+  left: 5%;
+  position: absolute;
+  /* bottom: 8px; */
+  /* width: 100%; */
+  /* text-align: center; */
+}
+.second{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 400px));
+    justify-content: center;
+    padding: 7.4px;
+    /* justify-content: space-evenly; */
+}
+.sec_card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1 px solid rgb(223,224,224);
+    border-radius: 8px;
+    border:1px solid rgb(218, 149, 85);
+    background-color: white;
+    /* color: white; */
+}
+.sec_card:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.card_img{
+    position: relative;
+    overflow: hidden;  
+    height: 7rem;
+}
+.iim{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_txt{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 200px;
+    /* color: white; */
+    /* text-align: center; */
+}
+.sec_card:hover .iim{
+    transform: scale(1.1);
+  transition-duration: 200ms;
+
+}
+.car{
+    font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: rgb(25, 23, 23);
+  text-align: center;
+  /* text-decoration: none; */
+
+}
+
+
+.des{
+    color: rgb(113,107,107);
+    font-size: 1rem;
+}
+.sec_head{
+
+    font-size: 1.5rem;
+    margin-top: 25px;
+  margin-left:2px;
+  padding: 20px;
+  /* border: 2px solid black; */
+}
+/* .sec_con{ */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .sec_card img{
+    height: 300px;
+    width: 300px;
+}
+.secc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.sec-con{
+    border: 2px solid black;
+} */
+
+.third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+}
+    /* background-color:  */
+
+    /* height: 100; */
+
+.knw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid burlywood; */
+    /* width: 400px; */
+    height: 500px;
+    padding: 40px;
+}
+.knw h1{
+    align-self:flex-start;
+}
+.knw p{
+    text-align: justify;
+    font-weight: 200;
+    font-style: oblique;
+    line-height: 30px;
+}
+
+
+    /* background-color: antiquewhite; */
+
+
+
+
+
+/* butt */
+.faq {
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
+
+.active,
+.accordion:hover {
+  background-color: #f1f7f5;
+}
+.pannel {
+  padding: 0 1rem 1.5rem 1rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1f7f5;
+  display: none;
+}
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact_us{
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    border:none;
+    font-size: medium;
+
+
+}
+.contact_us a{
+    text-decoration: none;
+    color: #0f1111;
+}
+.contact_us:hover{
+    cursor: pointer;
+    background-color: beige;
+    color:black;
+}
+@media (min-width: 768px) {
+  .card_img{
+          height: 12rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .txt {font-size: 11px}
+}
+@media (max-width: 768px) {
+    .item {
+        margin-bottom: 15px;
+    }
+
+    .ques {
+        padding: 12px;
+    }
+
+    .ans {
+        padding: 12px;
+    }
+}
+
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="nav">
+                <div class="logo_nav">
+                    <div class="logo"></div>
+                </div>
+                <div class="box">
+                    <div class="ser">
+                        <div id="searchForm">
+                            <input class="ser" type="text" id="searchInput" placeholder="search place">
+                            <!-- <div class="search-icon"> -->
+                               <button type="submit">search</button>
+                            <!-- </div> -->
+                        </div>
+                        <div id="searchResults">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="home">
+                    <p><a href="#">home</a></p>
+                </div>
+                <div class="contact">
+                    <p><a href="#">Login</a></p>
+                </div>
+                <div class="about">
+                    <p><a href="#">About us</a></p>
+                </div>
+            </div>
+            <div class="bord">
+                <div class="cardd">
+                    <img src="./img2.jpg" alt="" >
+                    <div class="text">
+                        <p id="heading">
+                            Lets Explore India
+                        </p>
+                    </div>
+                        <div class="text2">
+                        <p>Choose from Famous places, hotels and more</p>
+                        </div>
+                        <!-- <div class="txt">Taj Mahal</div> -->
+                    
+                </div>
+                <div class="cardd">
+                    <img src="./img3.jpeg" alt="" >
+                    <div class="text">
+                        <p id="heading">
+                            Lets Explore India
+                        </p>
+                    </div>
+                    <div class="text2">
+                        <p>Choose from Famous places, hotels and more</p>
+                    </div>
+                        <!-- <div class="txt">Taj Mahal</div> -->
+                    
+                </div>
+                <div class="cardd">
+                    <img src="./img1.webp" alt="" >
+                    <div class="text">
+                        <p id="heading">
+                            Lets Explore India
+                        </p>
+                    </div>
+                    <div class="text2">
+                        <p>Choose from Famous places, hotels and more</p>
+                        <!-- <div class="txt">Taj Mahal</div> -->
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+
+            </div>
+        </div>
+        <div class="sec_head">
+            <h2>Explore the cities in India</h2>
+        </div>
+        <div class="second">
+            
+            <!-- <div class="secc"> -->
+                <!-- <div class="sec-con"> -->
+                    <div class="sec_card">
+                        <a href="#" class="card_img">
+                            <img src="./mumbai photo.jpg" alt="" class="iim" loading="lazy">
+
+                        </a>
+                    
+                        <div class="sec_txt">
+                            <a href="#">
+                                <h2 class="car">Mumbai</h2>
+                            </a>
+                            <p class="des">The Mumbai city, in Maharashtra state in India is also known by the name "Bombay". 
+                                Mumbai is the capital of Maharashtra state and the most populous city in India as well.
+                                The city of Mumbai, situated on the west coast of India, facing the Arabian Sea, also hosts one of the popular harbors in India.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="sec_card">
+                        <a href="#" class="card_img">
+                            <img src="./patna image.jpg" alt="" class="iim" loading="lazy">
+
+                        </a>
+                    
+                        <div class="sec_txt">
+                            <a href="#">
+                                <h2 class="car">Patna</h2>
+                            </a>
+                            <p class="des">Located on the banks of Ganga and tracing its history back to 5th century BC, Patna has been the 
+                                capital of several empires. Now a modern urban centre, the city is popular among tourists looking for vestiges of its glorious past.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="sec_card">
+                        <a href="#" class="card_img">
+                            <img src="./goa image.jpg" alt="" class="iim" loading="lazy">
+
+                        </a>
+                    
+                        <div class="sec_txt">
+                            <a href="#">
+                                <h2 class="car">Goa</h2>
+                            </a>
+                            <p class="des">Popularly known as India's party capital, Goa seduces travellers from all around the globe with its 
+                                beautiful beaches, ancient churches, majestic forts and unbeatable nightlife!
+                            </p>
+                        </div>
+                    </div>
+                <div class="sec_card">
+                    <a href="#" class="card_img">
+                        <img src="./taj mahal3.jpg" alt="" class="iim" loading="lazy">
+
+                    </a>
+                
+                    <div class="sec_txt">
+                        <a href="#">
+                            <h2 class="car">Agra</h2>
+                        </a>
+                        <p class="des">Agra is a city in the northern state of Uttar Pradesh, India. Agra's Taj Mahal is one of the most famous buildings in the world.
+                            It is one of the Seven Wonders of the world, and one of three World Heritage Sites in Agra.
+                        </p>
+                    </div>
+                </div>
+                <div class="sec_card">
+                    <a href="#" class="card_img">
+                        <img src="./lotustemple2.jpg" alt="" class="iim" loading="lazy">
+
+                    </a>
+                
+                    <div class="sec_txt">
+                        <a href="#">
+                            <h2 class="car">Delhi</h2>
+                        </a>
+                        <p class="des">Delhi is the capital city of India and is regarded as the heart of the nation. The city is popular for its enriched culture and heritage.
+                            The city hosts some famous historical monuments .The capital city is divided into two sections popularly known as Purani Dilli or Old Delhi and Nayi Dilli or New Delhi.
+                             Old Delhi is popular for its ancient culture and monuments along with its overcrowded gastronomical lanes.
+                        </p>
+                    </div>
+                </div>
+                <div class="sec_card">
+                    <a href="#" class="card_img">
+                        <img src="./kolkata photo.jpg" alt="" class="iim" loading="lazy">
+
+                    </a>
+                
+                    <div class="sec_txt">
+                        <a href="#">
+                            <h2 class="car">Kolkata</h2>
+                        </a>
+                        <p class="des"> Known as “City of Joy”, Kolkata is one of the largest metropolises of the world. Apart from being the capital of the West Bengal, it is also a principal commercial, cultural, and educational center of East India. 
+                            Located on the banks of the Hooghly, Kolkata came into prominence during British era when it emerged as a seat of power.
+                        </p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="third">
+            <div class="th1">
+                <div class="knw">
+                    <h1>Know More</h1>
+                    <p>Traveling is more than just moving from one place to another; it is a profound journey of self-discovery and personal growth. As we explore new destinations, we open ourselves to a world of possibilities, enriching our lives in ways that extend far beyond the itinerary. The transformative power of travel lies in its ability to awaken our senses, broaden our perspectives, and inspire us to embrace life with renewed vigor.
+
+                        One of the most compelling reasons to travel is the opportunity it provides to discover the unknown. Each destination holds its own treasures—whether it's the bustling streets of a vibrant city, the serene landscapes of a remote countryside, or the rich tapestry of a culture steeped in history. Stepping into these unfamiliar territories sparks a sense of adventure and curiosity that fuels our desire to explore further.
+                        
+                        
+                        
+                        Cultural immersion is another profound aspect of travel. Experiencing different ways of life firsthand—sampling local cuisine, participating in traditional rituals, or conversing with locals—deepens our understanding of humanity's rich tapestry. It fosters empathy and appreciation for cultural diversity, breaking down stereotypes and fostering meaningful connections with people from around the globe.
+                        
+                        Nature plays a transformative role in travel as well.
+                        
+                       </p>
+                </div>
+            </div>
+            <div class="th2">
+                <div class="wrapper">
+                    <!-- <p>The Begninning of a New Asset class</p> -->
+                    <h1>Frequently Asked Questions</h1>
+                    <div class="faq">
+                        <button class="accordion">
+                            How can the chatbot assist me during my travel planning?
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                          <p>
+                            Our chatbot is available 24/7 to answer your questions, provide recommendations, and assist with booking travel arrangements. Simply start a conversation to get personalized assistance and instant responses to your inquiries.
+                          </p>
+                        </div>
+                        <div class="faq">
+                            <button class="accordion">
+                                Does the app support language translation for seamless communication abroad?
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="pannel">
+                              <p>
+                                Yes, our app offers built-in language translation features to help you communicate effectively while traveling. Translate text, menus, signs, and conversations in real-time to navigate different languages with ease.
+                              </p>
+                            </div>
+                            <div class="faq">
+                                <button class="accordion">
+                                    Can the app recommend famous local dishes in the destinations I want to visit?
+                                  <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="pannel">
+                                  <p>
+                                    Yes, our app allows you to conveniently book hotels, resorts, guesthouses, and vacation rentals at your preferred destination. Browse through a wide selection of options, read reviews, and secure your stay with instant booking confirmation.
+                                  </p>
+                                </div>
+                                <div class="faq">
+                                    <button class="accordion">
+                                        How can I access emergency assistance or local support while traveling?
+                                      <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="pannel">
+                                      <p>
+                                        In case of emergencies or unexpected situations, our app provides access to local emergency contacts, embassy information, and 24/7 customer support. Travel with peace of mind knowing that help is just a tap away.
+                                      </p>
+                                    </div>
+                                    <div class="faq">
+                                        <button class="accordion">
+                                            How can I filter search results according to my preferences?
+                                          <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <div class="pannel">
+                                          <p>
+                                            Use our app's advanced filtering options to tailor search results based on your preferences. Filter by destination, activity type, budget, language, cuisine, and more to find personalized recommendations that match your interests.
+                                          </p>
+                                        </div>
+                                    </div>
+                                    <div class="conta">
+                                        <button class="contact_us">
+                                            <a href="#">CONTACT US</a>
+                                        </button>
+                                    </div>   
+                </div>
+        </div>
+        <script src="homi.js"></script>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("cardd");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+</body>
+</html>
