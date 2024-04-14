@@ -10,6 +10,8 @@
     text-transform: capitalize;
     outline: none;
     /* background: linear-gradient(#033747, #012730); */
+
+   
 }
 html{
     font-size: 62.5%;
@@ -22,7 +24,9 @@ html{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: linear-gradient(#033747, #012730);
+    /* background: linear-gradient(#033747, #012730); */
+    background: rgb(123,61,3
+    );
     top: 0;
     right: 0;
     left: 0;
@@ -130,7 +134,9 @@ html{
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    background: linear-gradient(#033747, #012730)
+    /* background: linear-gradient(#033747, #012730) */
+    background: rgb(123,61,3
+    );
 }
 .award-winning-hotel h1{
     color: darkred;
@@ -147,7 +153,7 @@ html{
     box-shadow: 8px 8px 2px lightblue;
     /* background: white; */
     /* background: linear-gradient(#033747, #012730); */
-    background-color: white;
+    background-color:rgb(218,159,85);
    
 align-items: center;
 justify-content: center;
