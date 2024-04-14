@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Art & Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url("./images/navvvv.webp");
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0; 
+    text-align: center;
+    height: 200px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header-container p{
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.header-container h1, h2 {
+    font-weight: 1000;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+    display: block;
+
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: ; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image:url("images/navvvv.webp");
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image:url("images/navvvv.webp");
+    background-size: cover; */
+}
+.mum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+.num h2{
+    font-size: 33px;
+    font-weight: 700;
+    
+}
+.hidden-content {
+    display: none;
+}
+button{
+    border: 2px solid white;
+    background-color: inherit;
+    color: brown;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.num2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#extraContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+
+
+}
+
+#extraContent img{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+}
+
+.mum3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Agra Art & Culture</h1>
+        <p>Explore the vibrant art and cultural heritage of Agra</p>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <div class="content-container mum">
+            <h2>About Agra</h2>
+            <p>Agra is a city in the northern state of Uttar Pradesh, India. Agra's Taj Mahal is one of the most famous buildings in the world.
+                It is one of the Seven Wonders of the world, and one of three World Heritage Sites in Agra.</p>
+            
+            <div class="hidden-content" id="extraContent" style="display: none;">
+                <p>Agra is not only famous for the mesmerizing Taj Mahal but its delicacies too. It is acknowledged as one of the best street food serving spots in the country by many connoisseurs. The city is very populated, yet it witnesses foodies coming from all over the country to quench their insatiable appetite.</p>
+                
+            </div>
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </section>
+
+    <section id="arts">
+        <div class="content-container num2">
+            <h2>Art and Creativity</h2>
+            <p>The city is reckoned for miniature paintings from the court of Agra and this tradition is continued by artisans till today. These beautiful paintings feature the images from the imperial court, dom </p>
+            <div class="hidden-content" id="extraContent">
+                <div class="im1">
+                    <img src="agra_art.jpg" alt="">
+                </div>
+                <div class="im2">
+                    <img src="agra_art1.jpg" alt="">
+                </div>
+                <div class="im3">
+                    <img src="agra_art3.jpg" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="content-container mum3">
+            <h2>Cultural Heritage</h2>
+            <p>
+                Agra is a beautiful amalgamation of cultures, the result of Rajput, Muslim and British rule in the region. Indian culture is well-known all over the globe for its diversity and the cultural heritage of Agra is one of the richest in the country due to its fascinating history. 
+
+The city has been the nourishing ground for art, architecture, music, poetry, literature and crafts having been nourished by its rulers, especially the Mughals, for centuries. We find reminiscence of the Mughal influence in the traditions, customs, food and lifestyle along with the monuments of yesteryear that attract thousands of tourists every year to the city.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Mumbai Art & Culture</p>
+        
+
+    </div>
+</footer>
+
+<script src="agra_art.js"></script>c:\Users\Isha\Downloads\agra_art.jpg
+</body>
+</html>
