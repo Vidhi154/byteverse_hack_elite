@@ -206,7 +206,7 @@ footer {
 		<button class="hamburger" id="hamburger-icon">
 			<span onclick="openNavbar()"> ☰</span>
 		</button>
-		<div class="logo">Your Logo</div>
+		<div class="logo">travel Elite</div>
 		<nav id="nav-menu">
 			<h1>Contact Us to get Connected</h1>
 		</nav>
@@ -245,7 +245,7 @@ footer {
 				<label for="message">Message: </label>
 				<textarea id="message" name="message" rows="4" required></textarea>
 
-				<button type="submit" class="submit-button">Submit</button>
+				<button type="submit" class="submit-button" onclick="abc()">Submit</button>
 			</form>
 		</div>
 	</section>
@@ -271,11 +271,16 @@ footer {
 
         <!-- Contact Form Section -->
        
-      
+      <script>
+		function abc(){
+			alert("We will reach you soon");
+		location.reload();
+		}
+	  </script>
 
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyM__BtCPaanJAbE2eRT9s2ZMqfN8laasgnOrP1GgARiOIY_IVwM84_lJaFP9CHLmE/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBbNxrfbbgOUnsF6ofHBBbhg-ZaCiuw96WgB_ZxOiBz3Q812WMoWPOQjs_ECjUF2GJYQ/exec'
     const form = document.forms['submit-to-google-sheet']
   
     form.addEventListener('submit', e => {
