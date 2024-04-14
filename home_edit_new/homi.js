@@ -28,22 +28,7 @@ document.getElementById('searchForm').addEventListener('span', function(event) {
     }
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const faqQuestions = document.querySelectorAll('.ques');
 
-//     faqQuestions.forEach(question => {
-//         question.addEventListener('click', () => {
-//             const answer = question.nextElementSibling;
-
-//             // Toggle the visibility of the answer
-//             if (answer.style.display === 'block') {
-//                 answer.style.display = 'none';
-//             } else {
-//                 answer.style.display = 'block';
-//             }
-//         });
-//     });
-// });
 {/* <script> */}
       var acc = document.getElementsByClassName("accordion");
       var i;
