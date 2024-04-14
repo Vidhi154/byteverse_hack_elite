@@ -2,159 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="style.css">
+	<title>Contact us Page</title>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     
 </head>
 
-<style>
-    /* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
 }
 
-.contact{
-    text-align: center;
-    margin-right: 500px;
-    font-weight: bolder;
-    font-size: 2rem;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center;
-    justify-content: center; */
-}
-
-/* Navigation Bar Styling */
-.navbar {
-    background-color: #3e2093;
-    color: #fff;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Header styles */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: white;
+	height: 4rem;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+	font-size: 2rem;
 }
 
-.nav-menu {
-    list-style: none;
-    display: flex;
+nav {
+	width: 30rem;
 }
 
-.nav-menu li {
-    margin-right: 20px;
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
 }
 
-.nav-menu li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+nav ul li a {
+	font-size: 1.2rem;
+	padding: 1rem;
+	text-decoration: none;
+	color: white;
 }
 
-.nav-menu li a:hover {
-    color: #01030c;
-
-    /* background-color: #ffffff; */
-    opacity: 0.6;
-    /* border: 1px solid black; */
+nav ul li a:hover {
+	background-color: #0dac30;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.reachUs-button {
+	padding: 1rem;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.reachUs-button:hover{
+	background-color: #1ac840;
 }
 
-/* Main Content Styling */
-.content {
-    /* margin-top: 80px;  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('./Chhatrapati\ Shivaji\ Maharaj\ Terminus.jpg');
-    background-size: cover;
-    /* float: left; */
-
-    /* Ensure content does not overlap with fixed navbar */
+/* banner section styles */
+.banner {
+	text-align: center;
+	background-color: #ffffff;
+	margin: 0 auto;
 }
 
-.topic-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #3e2093;
-    margin-bottom: 20px;
-    opacity: 1;
+.banner img {
+	max-width: 100%;
+	height: auto;
+}
+/* Contact form styles */
+.contact-form {
+	padding: 40px 0;
+	margin: 0 10px;
 }
 
-.input-box {
-    margin-bottom: 20px;
-    opacity: 0.9;
-    
-    /* background-color: aqua; */
-}
-.right-side{
-    background-color: #ffffff;
-    opacity: 0.8;
-    /* border: 1px solid black; */
-    /* background-color: #3e2093; */
-    width: 500px;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    /* opacity: inherit; */
-
+.form-container {
+	max-width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.input-box input,
-.input-box textarea {
+.contact-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-container label {
+	display:block;
+	font-weight: bold;
+}
+.form-container input, textarea{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	resize: vertical;
+}
+.submit-button {
+	/* padding: 10px 200px ; */
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-sizing: border-box;
-    color: black;
+    height: 60px;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
 }
 
-.button input[type="button"] {
-    /* color: #fff; */
-    color: #ffffff;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background-color: #3e2093;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+/* Contact info styles */
 
+   
 .button input[type="button"]:hover {
     background-color: #7c2626;
 }
 
 
 /* Contact Info Section Styling */
+
 .contact-info {
 	text-align: center;
 	padding: 50px 0;
@@ -239,38 +230,49 @@ footer {
 			<h2>Your Details</h2>
 			<form name="submit-to-google-sheet">
 
-<header class="navbar">
-    <div class="container">
-        <div class="logo"> Logo</div>
-        <nav>
-           <div class="contact">Contact Us</div>
-        </nav>
-    </div>
-</header>
+
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" required>
+
 
 				<label for="email">Email: </label>
 				<input type="email" id="email" name="email" required>
 
+
+				<label for="phone">Phone: </label>
+				<input type="tel" id="phone" name="phone">
+
+				<label for="message">Message: </label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Company contact info -->
+	<section class="contact-info">
+		<h2>Contact Information</h2>
+		<address>
+			
+			Phone: <a href="tel:1234567890">123-456-7890</a><br>
+			Email: <a href="mailto:info@example.com">travelElite@gmail.com</a>
+		</address>
+	</section>
+
+	<!-- Footer section -->
+	<footer>
+		<p>
+		© 2023 travel Elite. All rights reserved.
+		</p>
+	</footer>
+	<!-- <script src="script.js"></script> -->
+   
+
         <!-- Contact Form Section -->
-        <div class="right-side">
-            <div class="topic-text">Send us a message</div>
-            <form  name="submit-to-google-sheet">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Enter your name">
-                </div>
-                <div class="input-box">
-                    <input type="text" name="Email" placeholder="Enter your email">
-                </div>
-                <div class="input-box message-box">
-                    <textarea  name="Message"  placeholder="Write your message here..."></textarea>
-                </div>
-                <div class="button">
-                    <input type="button" value="Send Now" >
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+       
+      
+
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyM__BtCPaanJAbE2eRT9s2ZMqfN8laasgnOrP1GgARiOIY_IVwM84_lJaFP9CHLmE/exec'
@@ -283,6 +285,7 @@ footer {
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
 </body>
 
 </html>
