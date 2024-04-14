@@ -260,3 +260,10 @@ color: black;
 .btn a:hover{
     color:black
 }
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
