@@ -16,7 +16,7 @@
 
 body {
     /* background-image: linear-gradient(#033747, #012730); */
-    color: #333;
+    background-color: rgb(218,149,85);
 }
 
 nav {
@@ -30,7 +30,9 @@ nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: linear-gradient(#033747, #012730);
+    /* background: linear-gradient(#033747, #012730); */
+    background: rgb(123,61,3
+    );
 }
 
 nav .logo {
@@ -40,6 +42,9 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+nav .logo:hover{
+    color:aqua;
 }
 
 .container {
@@ -64,8 +69,15 @@ nav .logo {
     flex: 1 0 40%; /* Flexible width for responsiveness */
     box-sizing: border-box; /* Include padding in width calculation */
      
+}
+.card:hover{
+    transform:translateY(20px);
+    background-image: linear-gradient(white, lightblue);
+    transition: all 0.4s ease 0s;
 
 }
+
+
 
 .card img {
     width: 100%;
