@@ -6,7 +6,7 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 
     // Example search logic (replace with your own)
     if (searchInput === 'Kolkata') {
-        window.location.href = 'kolkata.html';
+        window.location.href = 'hi.html';
     } else if (searchInput === 'Patna') {
         window.location.href = 'patna.html';
 
