@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Art & Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url("patna11.jpg");
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0; 
+    text-align: center;
+    height: 200px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header-container p{
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.header-container h1, h2 {
+    font-weight: 1000;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+    display: block;
+
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: ; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image:url("images/navvvv.webp");
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image:url("images/navvvv.webp");
+    background-size: cover; */
+}
+.mum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+.num h2{
+    font-size: 33px;
+    font-weight: 700;
+    
+}
+.hidden-content {
+    display: none;
+}
+button{
+    border: 2px solid white;
+    background-color: inherit;
+    color: brown;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.num2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#extraContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+
+
+}
+
+#extraContent img{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+}
+
+.mum3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Patna Art & Culture</h1>
+        <p>Explore the vibrant art and cultural heritage of Patna</p>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <div class="content-container mum">
+            <h2>About Patna</h2>
+            <p>Located on the banks of Ganga and tracing its history back to 5th century BC, Patna has been the capital of several empires. Now a modern urban centre, the city is popular among tourists looking for vestiges of its glorious past.</p>
+        
+            <div class="hidden-content" id="extraContent" style="display: none;">
+                <p>Historically, Patna was known as Pataliputra.
+                    Patna is not only the capital of Bihar, but also the largest city of Bihar.
+                    Bihar is home to many pilgrimage centres of the Buddhists, Hindus, and Jains.</p>
+                
+            </div>
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </section>
+
+    <section id="arts">
+        <div class="content-container num2">
+            <h2>Art and Creativity</h2>
+            <p>Patna is famous for Madhubani paintings or Mithila paintings where fingers, brushes, twigs, nib-pens, and matchsticks are used to paint pictures, using natural dyes and pigments. It is a traditional style of painting practiced in the Mithila region of Bihar state.
+                 The painting are characterized by geometrical patterns which are pleasing to the eyes. </p>
+            <div class="hidden-content" id="extraContent">
+                <div class="im1">
+                    <img src="biharculture.jpg" alt="">
+                </div>
+                <div class="im2">
+                    <img src="madhubani-painting.webp" alt="">
+                </div>
+                <div class="im3">
+                    <img src="patnaculture1.jpg" alt="">
+                </div>
+                <!-- <p>It will appear when you click "Show More".</p> -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="content-container mum3">
+            <h2>Cultural Heritage</h2>
+            <p>Apart from the regular Indian festivals, Patna is famous for few annual events and local festivals that are held in and around the city. Chatt Puja/ Chatt Festival is an important festival of the region.
+                  Ram Navami, Sama-Chakeva, Makar-Sankranti, Madhushravani, Teej are also celebrated with much enthusiasm. Patliputra Mahotsava is another major festival here. 
+                This festival showcases the art and culture of Bihar through various folk dance and song performances</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Patna Art & Culture</p>c:\Users\Isha\Downloads\madhubani-painting.webpc:\Users\Isha\Downloads\madhubani-painting.webp
+        
+
+    </div>
+</footer>
+
+<script src="patnaart.js"></script>
+</body>
+</html>

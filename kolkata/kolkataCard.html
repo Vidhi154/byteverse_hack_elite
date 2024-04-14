@@ -16,7 +16,7 @@
 
 body {
     /* background-image: linear-gradient(#033747, #012730); */
-    color: #333;
+   background: rgb(218,149,85);
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: linear-gradient(#033747, #012730);
+    background: rgb(123,61,3)
 }
 
 nav .logo {
@@ -40,6 +40,9 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+nav .logo:hover{
+    color:aqua;
 }
 
 .container {
@@ -63,7 +66,12 @@ nav .logo {
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
     flex: 1 0 40%; /* Flexible width for responsiveness */
     box-sizing: border-box; /* Include padding in width calculation */
-     
+    
+}
+.card:hover{
+    transform:translateY(20px);
+    background-image: linear-gradient(white, lightblue);
+    transition: all 0.4s ease 0s;
 
 }
 
@@ -109,44 +117,59 @@ nav .logo {
 <body>
     <nav>
         <div class="logo">
-            KOLKATA
+            <a href="\home_edit_new\homi.html">
+                KOLKATA
+            </a>
+            
         </div>
     </nav>
 
     <div class="container">
         <div class="card"> 
-            <img src="./images/birlaTemple.jpg">
+            <a href="kolkata_places.html">
+                <img src="./images/birlaTemple.jpg">
+            </a>
+           
             <div class="card-content">
                 <h2>Places to be Visited</h2>
                 <p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state. The Port of Kolkata is India's oldest operating port and its sole major riverine port. The city, nicknamed the "City of Joy," is widely regarded for its educational and cultural heritage, and six Nobel Laureates have been associated with the city.</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="kolkata_places.html" class="btn">Read More</a>
             </div>
         </div>
 
         <div class="card"> 
-            <img src="./images/DSC_0183_editado.webp">
+            <a href="KolkataFamousFood.html">
+                <img src="./images/DSC_0183_editado.webp">
+            </a>
+            
             <div class="card-content">
                 <h2>Famous Food</h2>
                 <p>Kolkata is famous for an array of things, and one of the most important of them is food. The mouth-watering Rosogullas, Chomchom, and Rasamalai, the super tasty Sorshe Ilish and Chingri Macher Malai Curry are but a few of the mouthwatering and tempting foods of the highly illustrated and exquisite Bengali cuisine.</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="KolkataFamousFood.html" class="btn">Read More</a>
             </div>
         </div>
 
         <div class="card"> 
-            <img src="./images/art&culture.jpg">
+            <a href="kolkata_art.html">
+                <img src="./images/art&culture.jpg">
+            </a>
+            
             <div class="card-content">
                 <h2>Arts & Culture</h2>
                 <p>Kolkata remains at the vanguard of artistic movements in the country, and several artists' societies present annual shows. Kolkata is also a center of traditional and contemporary music and dance.</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="kolkata_art.html" class="btn">Read More</a>
             </div>
         </div>
 
         <div class="card"> 
-            <img src="./images/hotels.jpg">
+            <a href="kolkata\Kolkata Hotel\index.html">
+                <img src="./images/hotels.jpg">
+            </a>
+            
             <div class="card-content">
                 <h2>Hotels</h2>
                 <p>Hotels in Kolkata, India — Choose from a wide range of properties which Booking.com offers. Search now! Book your Hotel in Kolkata online. No reservation costs. Great rates. Hotels. Villas. Hostels. Motels. Great Choice. Apartments. Flight + Hotel.</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="Kolkata Hotel\index.html" class="btn">Read More</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Art & Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url("kolkata1.avif");
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0; 
+    text-align: center;
+    height: 200px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header-container p{
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.header-container h1, h2 {
+    font-weight: 1000;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+    display: block;
+
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: ; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image:url("images/navvvv.webp");
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image:url("images/navvvv.webp");
+    background-size: cover; */
+}
+.mum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+.num h2{
+    font-size: 33px;
+    font-weight: 700;
+    
+}
+.hidden-content {
+    display: none;
+}
+button{
+    border: 2px solid white;
+    background-color: inherit;
+    color: brown;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.num2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#extraContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+
+
+}
+
+#extraContent img{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+}
+
+.mum3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Kolkata Art & Culture</h1>
+        <p>Explore the vibrant art and cultural heritage of Kolkata</p>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <div class="content-container mum">
+            <h2>About Kolkata</h2>
+            <p>Known as the ‘City of Joy’, Kolkata holds an important place in the economy, politics and culture of India. The capital of West Bengal, Kolkata is one of the four metropolitan cities in India and has retained its quintessential charm despite modernization.</p>
+            <!-- <p>This is some visible content.</p> -->
+            <div class="hidden-content" id="extraContent" style="display: none;">
+                <p>Earlier known as Calcutta, the city was founded in 1698 and served as the capital of British India till 1911 and then was shifted to Delhi. The city was renamed, Kolkata in 2001. Located along the banks of river Hoogly, Kolkata is connected to Howrah by the iconic Howrah bridge.</p>
+                <!-- <p>It will appear when you click "Show More".</p> -->
+            </div>
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </section>
+
+    <section id="arts">
+        <div class="content-container num2">
+            <h2>Art and Creativity</h2>
+            <p>Kolkata is famous for its wall painting, fancy dolls and many. The Terracotta slabs and metal works are superior in this state. The ornaments with precious stones are the sample for its unique craft work.
+                 In this city, most of the things are made up of bamboo.</p>
+            <div class="hidden-content" id="extraContent">
+                <div class="im1">
+                    <img src="kolkata_art1.avif" alt="">
+                </div>
+                <div class="im2">
+                    <img src="kolkata_art.avif" alt="">
+                </div>
+                <div class="im3">
+                    <img src="kolkata_art3.webp" alt="">
+                </div>
+               
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="content-container mum3">
+            <h2>Cultural Heritage</h2>
+            <p>Cultural diversity, exotic, vibrant, revolutionary heritage etc. are the features that prevail in the culture of Kolkata. 
+
+                Kolkata’s rich culture and artistic thought among the people has made it an appropriate place for cultural-meditation </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Kolkata Art & Culture</p>
+        
+
+    </div>
+</footer>
+
+<script src="art.js"></script>
+</body>
+</html>

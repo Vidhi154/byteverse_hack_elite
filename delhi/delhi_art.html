@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Art & Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url("delhi2.jpg");
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    height: 200px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header-container p{
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.header-container h1, h2 {
+    font-weight: 1000;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+    display: block;
+
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: ; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image:url("images/navvvv.webp");
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image:url("images/navvvv.webp");
+    background-size: cover; */
+}
+.mum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+.num h2{
+    font-size: 33px;
+    font-weight: 700;
+    
+}
+.hidden-content {
+    display: none;
+}
+button{
+    border: 2px solid white;
+    background-color: inherit;
+    color: brown;
+}
+button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.num2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#extraContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+
+
+}
+
+#extraContent img{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+}
+
+.mum3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Delhi Art & Culture</h1>
+        <p>Explore the vibrant art and cultural heritage of Delhi</p>
+    </div>
+</header>
+<main>
+    <section id="about">
+        <div class="content-container mum">
+            <h2>About Delhi</h2>
+            <p>Delhi is the capital city of India and is regarded as the heart of the nation. The city is popular for its enriched culture and heritage.</p>
+            
+            <div class="hidden-content" id="extraContent" style="display: none;">
+                <p>The city hosts some famous historical monuments .The capital city is divided into two sections popularly known as Purani Dilli or Old Delhi and Nayi Dilli or New Delhi.
+                    Old Delhi is popular for its ancient culture and monuments along with its overcrowded gastronomical lanes.</p>
+               
+            </div>
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </section>
+
+    <section id="arts">
+        <div class="content-container num2">
+            <h2>Art and Creativity</h2>
+            <p> Delhi has the history and culture of its own. The identity and diverse culture cannot be defeated due to its unique nature. The city, being the national capital, has seen influences of a diverse range of art and culture from several centuries from different places. Hence it boasts of vibrant art and heritage.
+                Other forms of arts here include pottery, toy sculpting with wood, polishing works, and kite making. 
+            </p>
+            <div class="hidden-content" id="extraContent">
+                <div class="im1">
+                    <img src="delhi_art1.jpg" alt="">
+                </div>
+                <div class="im2">
+                    <img src="delhi_art2.jpg" alt="">
+                </div>
+                <div class="im3">
+                    <img src="delhi_art3.jpg" alt="">
+                </div>
+                <!-- <p>It will appear when you click "Show More".</p> -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="content-container mum3">
+            <h2>Cultural Heritage</h2>
+            <p>Delhi State has the history and culture of its own. The identity and diverse culture cannot be defeated due to its unique nature. The city, being the national capital, has seen influences of a diverse range of art and culture from several centuries from different places. Hence it boasts of vibrant art and heritage. If you start reading its history, one cannot deny the fact of having a range of lifestyle, art, craft, music, and culture within it. To celebrate such great diverse art and culture around the city, there are also several cultural programmes and art galleries which are marked around. 
+                These events further attract us to celebrate their uniqueness.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Delhi Art & Culture</p>
+        
+
+    </div>
+</footer>
+
+<script src="delhi_art.js"></script>
+</body>
+</html>
