@@ -22,12 +22,9 @@ document.getElementById('searchButton').addEventListener('click', function(event
   }
 });
 
-<<<<<<< HEAD
-=======
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     const faqQuestions = document.querySelectorAll('.ques');
->>>>>>> b1410c2cbebba22932972e5c0700011322137a92
 
 {/* <script> */}
       var acc = document.getElementsByClassName("accordion");
