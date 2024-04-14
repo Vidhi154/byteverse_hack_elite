@@ -16,7 +16,7 @@
 
 body {
     /* background-image: linear-gradient(#033747, #012730); */
-    color: #333;
+    background-color: rgb(218,149,85);
 }
 
 nav {
@@ -30,7 +30,9 @@ nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: linear-gradient(#033747, #012730);
+    /* background: linear-gradient(#033747, #012730); */
+    background: rgb(123,61,3
+    );
 }
 
 nav .logo {
@@ -40,6 +42,9 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+nav .logo:hover{
+    color:aqua;
 }
 
 .container {
@@ -64,8 +69,15 @@ nav .logo {
     flex: 1 0 40%; /* Flexible width for responsiveness */
     box-sizing: border-box; /* Include padding in width calculation */
      
+}
+.card:hover{
+    transform:translateY(20px);
+    background-image: linear-gradient(white, lightblue);
+    transition: all 0.4s ease 0s;
 
 }
+
+
 
 .card img {
     width: 100%;
@@ -115,7 +127,7 @@ nav .logo {
 
     <div class="container">
         <div class="card"> 
-            <img src="fresh-vada-pav.jpg">
+            <img src="./images/fresh-vada-pav.jpg">
             <div class="card-content">
                 <h2>Vada-Pav</h2>
                 <p>Vada pav, alternatively spelt wada pao, is a vegetarian fast food dish native to the Indian state of Maharashtra. The dish consists of a deep fried potato dumpling placed inside a bread bun sliced almost in half through the middle. It is generally accompanied with one or more chutneys and a green chili pepper.</p>
@@ -124,7 +136,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-            <img src="mawa-samosa.jpg">
+            <img src="./images/mawa-samosa.jpg">
             <div class="card-content">
                 <h2>Mawa-Samosa</h2>
                 <p>Mewa Samosa is a dry fruit mini samosa. These crispy fried triangles stuffed with the amalgamation of sweet n salty spices and richness of finest quality dry fruits. These mini items are an instant hit for any occasion. Especially popular during the festive season of Diwali, Holi, Karwa Chauth etc. Commonly consumed as a tea time snack.</p>
@@ -133,7 +145,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-            <img src="bombil-fry.jpg">
+            <img src="./images/bombil-fry.jpg">
             <div class="card-content">
                 
                 <h2>Bombil-Fry </h2>
@@ -143,7 +155,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-          <img src="burn-maska.jpg">
+          <img src="./images/burn-maska.jpg">
           <div class="card-content">
               <h2>Burn-Muska </h2>
               <p> fresh pav or buns, fresh cream and white butter. Roast the pavs and make a mixture of butter-cream, which is known as the maska. Apply dollops of this maska all over the warm pav and inside it and you are good to go! It's a pocket-friendly recipe that can be enjoyed anytime with masala tea.</p>
@@ -152,7 +164,7 @@ nav .logo {
       </div>
 
       <div class="card"> 
-        <img src="baida roti.jpeg">
+        <img src="./images/baida roti.jpeg">
         <div class="card-content">
             <h2>Baida- Roti</h2>
             <p>Baida roti is an egg-based paratha package, and Baida signifies egg. For this food, people use Refined flour to form the paratha dough, which is then filled with a mixture of chopped chicken, egg, and other spices. They then fold it into a bundle, fry it quickly on a Tava (griddle), and serve it with a squeeze of lime</p>
@@ -161,7 +173,7 @@ nav .logo {
     </div>
 
         <div class="card"> 
-            <img src="akuri-toast.jpg">
+            <img src="./images/akuri-toast.jpg">
             <div class="card-content">
                 <h2>Akuri-Toast</h2>
                 <p>Scrambled eggs made in the Parsi style recipe are also referred to as Akuri Recipe. Parsi Community of India makes this delectable dish where eggs are not overcooked. Instead, the eggs are little runny and loose. Mild spices are added to it to make it flavoursome.</p>

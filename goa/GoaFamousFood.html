@@ -16,7 +16,7 @@
 
 body {
     /* background-image: linear-gradient(#033747, #012730); */
-    color: #333;
+    background-color: rgb(218,149,85);
 }
 
 nav {
@@ -30,7 +30,9 @@ nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: linear-gradient(#033747, #012730);
+    /* background: linear-gradient(#033747, #012730); */
+    background: rgb(123,61,3
+    );
 }
 
 nav .logo {
@@ -40,6 +42,10 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+
+nav .logo:hover{
+    color:aqua;
 }
 
 .container {
@@ -63,7 +69,13 @@ nav .logo {
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
     flex: 1 0 40%; /* Flexible width for responsiveness */
     box-sizing: border-box; /* Include padding in width calculation */
-     
+    
+}
+
+.card:hover{
+    transform:translateY(20px);
+    background-image: linear-gradient(white, lightblue);
+    transition: all 0.4s ease 0s;
 
 }
 
@@ -115,7 +127,7 @@ nav .logo {
 
     <div class="container">
         <div class="card"> 
-            <img src="balchao.jpg">
+            <img src="./images/balchao.jpg">
             <div class="card-content">
                 <h2>Balchao</h2>
                 <p>Balchão is a method of cooking, made with either fish (de peixe), prawns (de camarão), or pork (de porco), in a spicy and sour tomato-chili sauce. It resembles pickling and can be made days in advance without reheating. Some Goans make prawn balchao in tamarind sauce</p>
@@ -124,7 +136,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-            <img src="xacuti.jpg">
+            <img src="./images/xacuti.jpg">
             <div class="card-content">
                 <h2>Xacuti</h2>
                 <p>Xacuti is a curry prepared in Goa, India, with complex spicing, including white poppy seeds, sliced onions, toasted grated coconut, and large dried red chillies. It is usually prepared with crabs, chicken, lamb, or beef. It is also known as chacuti in Portuguese.</p>
@@ -133,7 +145,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-            <img src="Kismur.jpg">
+            <img src="./images/Kismur.jpg">
             <div class="card-content">
                 <h2>kismur</h2>
                 <p>The name kismur means mixture or to mix everything together. This recipe is also known as sungta kismuri an tastes tangy and spicy. Dry prawns is also known as galmo and this recipe is also known as Goan galmo recipe..</p>
@@ -142,7 +154,7 @@ nav .logo {
         </div>
 
         <div class="card"> 
-          <img src="Chicken-Cafreal-.jpg">
+          <img src="./images/Chicken-Cafreal-.jpg">
           <div class="card-content">
               <h2>Chicken cafreal</h2>
               <p>Chicken cafreal is always made from whole chicken legs, flavoured with the spices and herbs mentioned and then shallow fried. Chicken cafreal is usually accompanied by potato wedges and lime wedges. It is a popular dish in the bars and taverns of the state.</p>
