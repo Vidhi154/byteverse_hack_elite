@@ -1,32 +1,27 @@
-document.getElementById('searchForm').addEventListener('span', function(event) {
-    event.preventDefault(); // Prevent default form submission
+document.getElementById('searchButton').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent default button behavior
 
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-    const searchResultsContainer = document.getElementById('searchResults');
+  const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+  const searchResultsContainer = document.getElementById('searchResults');
 
-    // Example search logic (replace with your own)
-    if (searchInput === 'Kolkata') {
-        window.location.href = 'home_edit_new\homi.js';
-    } else if (searchInput === 'Patna') {
-        window.location.href = 'patna.html';
-
-    } 
-    else if (searchInput === 'Agra') {
-        window.location.href = 'agra.html';
-        
-    }
-    else if (searchInput === 'Goa') {
-        window.location.href = 'goa.html';
-        
-    }
-    else if (searchInput === 'Jaipur') {
-        window.location.href = 'jaipur.html';
-        
-    }
-    else {
-        searchResultsContainer.textContent =`No results found for ${searchInput}`;
-    }
+  // Example search logic (replace with your own)
+  if (searchInput === 'kolkata') {
+      window.location.href = '/kolkata/kolkataCard.html';
+  } else if (searchInput === 'patna') {
+      window.location.href = '/patna/patna_card.html';
+  } else if (searchInput === 'goa') {
+      window.location.href = '/goa/goa_card.html';
+  } else if (searchInput === 'agra') {
+      window.location.href = 'goa/goa_card.html';
+  } else if (searchInput === 'mumbai') {
+      window.location.href = '/mumbai/mumbai_page.html';
+  } else if (searchInput === 'delhi') {
+      window.location.href = '/delhi/delhi_card.html';
+  } else {
+      searchResultsContainer.textContent = `No results found for ${searchInput}`;
+  }
 });
+
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     const faqQuestions = document.querySelectorAll('.ques');
